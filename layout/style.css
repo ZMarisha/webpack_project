@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+@media (min-width: 320px) and (max-width: 667px) {
+  .container {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+.blockGalary {
+  justify-content: center;
+  display: grid;
+}
+
+.headering {
+  color: red;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#galaryCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 1024px) {
+  #galaryCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 320px) and (max-width: 667px) {
+  #galaryCards {
+    grid-template-columns: 1fr;
+  }
+}
+.card {
+  justify-content: center;
+  display: grid;
+  align-items: center;
+  width: 300px;
+  border: 1px solid lightblue;
+}
+
+.imgCard, .audioCard, .videoCard {
+  display: block;
+  width: inherit;
+  height: 160px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.titleCard {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 300;
+}/*# sourceMappingURL=style.css.map */
