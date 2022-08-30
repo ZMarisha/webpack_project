@@ -11,7 +11,7 @@ module.exports = {
     module: {
         rules: [
           {
-            test: /\.(png|jpeg|gif)$/i,
+            test: /\.(png|jpeg|gif|mp3|mp4)$/i,
             use: [
               {
                 loader: 'img-optimize-loader',
@@ -26,17 +26,6 @@ module.exports = {
                 }
               }
             ],
-          },
-          {
-            test: /\.(mp3|mp4)$/i,
-            use: [ 
-              {
-                options: {
-                name: '[path][name].[ext]',
-                loader: 'file-loader'
-                }
-              }
-            ]
           },
           {
             test: /\.s[ac]ss$/i,
