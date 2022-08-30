@@ -19,4 +19,4 @@ export const items = [
     {id: 7, type: 'audio', title: 'Ночью в лесу...', src: audio3},
     {id: 8, type: 'video', title: 'Never gonna give you up', src: video1},
     {id: 9, type: 'video', title: 'Морской прибой', src: video2},
-];
+]
